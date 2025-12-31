@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(to right, #f8f9fa, #e9f5ff);
+}
+
+header {
+  background: linear-gradient(135deg, #ff9800, #f44336);
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  animation: slideDown 1s ease;
+}
+
+section {
+  padding: 40px 20px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 16px;
+  color: #f44336;
+}
+
+.card p {
+  margin: 0 16px 16px;
+}
+
+.contact {
+  background: #263238;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+
+.contact a {
+  color: #ffcc00;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.address {
+  margin-top: 10px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #cfd8dc;
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
