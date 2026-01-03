@@ -1,47 +1,29 @@
-import React from 'react';
-import interior from './assets/interior.png';
-import exterior from './assets/exterior.png';
-import putty from './assets/putty.png';
+
+import ApexProtek from './assets/products/apex-ultima-protek.png'
+import Apex from './assets/products/apex-ultima.png'
+import Ace from './assets/products/ace-exterior.png'
+import Tractor from './assets/products/tractor-emulsion.png'
+import Royale from './assets/products/royale-luxury.png'
 
 export default function App() {
   return (
-    <div>
-      <header>
-        <h1>Asian Paints Professional Painting Services</h1>
-        <p>Interior • Exterior • Full Putty • Affordable Rates</p>
-      </header>
+    <div className="container">
+      <h1>Asian Painting Works</h1>
+      <p>Interior & Exterior Painting Services</p>
 
-      <section>
-        <h2 style={{ textAlign: 'center' }}>Our Services</h2>
-        <div className="cards">
-          <div className="card">
-            <img src={interior} alt="Interior Painting" />
-            <h3>Interior Painting</h3>
-            <p>Tractor & Royale painting with smooth finish.</p>
-          </div>
-
-          <div className="card">
-            <img src={exterior} alt="Exterior Painting" />
-            <h3>Exterior Painting</h3>
-            <p>Ace, Apex & Ultima for long-lasting protection.</p>
-          </div>
-
-          <div className="card">
-            <img src={putty} alt="Putty Work" />
-            <h3>Full Wall Putty</h3>
-            <p>Complete surface levelling for premium look.</p>
-          </div>
-        </div>
-      </section>
+      <h2>Asian Paints Products</h2>
+      <div className="grid">
+        <div className="card"><img src={ApexProtek} /><p>Apex Ultima Protek</p></div>
+        <div className="card"><img src={Apex} /><p>Apex Ultima</p></div>
+        <div className="card"><img src={Ace} /><p>Ace Exterior Emulsion</p></div>
+        <div className="card"><img src={Tractor} /><p>Tractor Emulsion</p></div>
+        <div className="card"><img src={Royale} /><p>Royale Luxury Emulsion</p></div>
+      </div>
 
       <div className="contact">
-        <h2>Contact Us</h2>
-        <p>📞 <a href="tel:7845363366">7845363366</a></p>
-        <div className="address">
-          📍 No:3/7, Ramanujam Garden Street,<br />
-          Pattalam, Chennai – 600012
-        </div>
+        <p>📞 7845363366</p>
+        <p>📍 No:3/7, Ramanujam Garden Street, Pattalam, Chennai – 600012</p>
       </div>
     </div>
-  );
+  )
 }
